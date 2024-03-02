@@ -82,7 +82,7 @@ export const updateBlog = async (req, res) => {
 export const deleteBlog = async (req, res) => {
     try {
         await BlogModel.destroy({
-            where: { id: req.params.is }
+            where: { id: req.params.id }
         })
         res.json({
             //este formato es "clabe" : "valor"
