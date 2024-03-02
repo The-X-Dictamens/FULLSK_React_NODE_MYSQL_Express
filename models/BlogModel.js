@@ -1,6 +1,6 @@
 //escencia de squelizxe abstraccion de la base d e datos
 
-import db from "../database/db"
+import db from "../database/db.js"
 
 /**
  * modelo nombre singular en mayusculas
@@ -12,12 +12,12 @@ User
  * dos formas de definir, squerlize . define o extenfiendo de modelo usando init
  */
 //importamos la copnexion
-import { DataType, DataTypes } from "sequelize";
+import { Sequelize, DataTypes } from "sequelize";
 
-const BlogModel = db.define('blogs'. {
+const BlogModel = db.define('blogs', {
     title: { type: DataTypes.STRING },
     content: { type: DataTypes.STRING },
     
 })
 
-export default BlogModel
+export default BlogModel    
