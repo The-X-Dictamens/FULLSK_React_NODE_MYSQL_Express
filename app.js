@@ -1,16 +1,16 @@
-import { Express } from "express";
+import express  from 'express'
 import cors from 'cors'
 
 import db from "./database/db.js";
 
 import blogRoutes from './routes/routes.js'//si aqui se me buguea es que le deno poner .js a estas export
 
-const app = Express()
+const app = express()
 
 //vamos a configurar al cors
 app.use(cors())
 
-app.use(Express.json())
+app.use(express.json())
 
 app.use('/blogs', blogRoutes)
 

@@ -7,12 +7,11 @@ import db from "../database/db.js"
  * las tablas nombre plural y minusculas
  */
 
-User
 /**
  * dos formas de definir, squerlize . define o extenfiendo de modelo usando init
  */
 //importamos la copnexion
-import { Sequelize, DataTypes } from "sequelize";
+import {DataTypes } from "sequelize";
 
 const BlogModel = db.define('blogs', {
     title: { type: DataTypes.STRING },

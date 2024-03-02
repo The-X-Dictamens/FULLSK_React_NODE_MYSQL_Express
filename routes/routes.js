@@ -1,7 +1,7 @@
-import { Express } from "express";
-import { createBlog, deleteBlog, getAllBlogs, getBlog, updateBlog } from "../controllers/BlogControllers.js";
+import express  from 'express'
+import { createBlog, deleteBlog, getAllBlogs, getBlog, updateBlog } from '../controllers/BlogControllers.js'
 
-const router = Express.router()
+const router = express.Router()
 
 //primer metodo, trarer todos los blogs
 
