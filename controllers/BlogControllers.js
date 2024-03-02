@@ -27,12 +27,13 @@ export const getAllBlogs = async(req, res) => {
 
 export const getBlog = async (req, res) => {
     try {
-       const blog = BlogModel.findAll({
+       const blog = await BlogModel.findAll({
             where: {
                 id:req.params.id
-            }
+           }
+           
         })
-        res.json(blog)
+        res.json(blog[0])
     } catch (error) {
         res.json({message: error.message})
         
@@ -61,7 +62,7 @@ export const createBlog = async (req, res) => {
 
 //Procedimiento par aactualizar un registro
 
-export const updateBlog = async (rec, res) => {
+export const updateBlog = async (req, res) => {
     try {
         await BlogModel.update(req.body, {
             where: {id: req.params.id}
