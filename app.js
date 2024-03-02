@@ -25,11 +25,12 @@ try {
     console.log('Conexion incositosa a la db porque me dio la gana que : ${error} ')
 
 }
-
+/*
 app.get('/', (req, res) => {
     res.send('HOlanigger')
 })
+*/
 
 app.listen(8000, () => {
-    console.log('Nuestro hijo eta corriendo en el 8000/')
+    console.log('Nuestro hijo eta corriendo en el 8000/ in http://localhost:8000/')
 })

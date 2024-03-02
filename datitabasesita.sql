@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS `database_app`.`blogs` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(105) NULL,
   `content` VARCHAR(450) NULL,
-  `createAt` DATE NULL,
-  `updateAt` DATE NULL)
+  `createdAt` DATE NULL,
+  `updatedAt` DATE NULL)
 ENGINE = InnoDB;
 
 
