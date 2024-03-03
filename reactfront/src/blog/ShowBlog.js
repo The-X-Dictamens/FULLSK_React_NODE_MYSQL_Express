@@ -49,17 +49,19 @@ const CompShowBlogs = () => {
                         <tbody>
     
     
-                            {blogs.map((blog) => (
+                            {blogs.map (( blog) => (
         
                                 <tr key={blog.id}>      
                                     <td>{blog.title}</td>            
                                     <td>{blog.content}</td>      
                                     <td>
-                                        <link to={'/edit/${blog.id}'} className='btn btn-info'>Editar</link>
-                                        <button onClick={() =>deleteBlog(blog.id) } className='btn btn-danger'>Dekete</button>
+                                        <Link to={'/edit/${blog.id}'} className='btn btn-info'>Editar</Link>
+                                        <button onClick={() =>deleteBlog(blog.id) } className='btn btn-danger'>delete</button>
                                     </td>        
                                 </tr>
-    ))}
+                            )
+                            )
+                            }
       
     </tbody>
 </table>

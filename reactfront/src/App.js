@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import CompShowBlogs from './blog/showBlog';
 
 //importamos el componente
-import CompShowBlogs from './blog/ShowBlog';
+//import CompShowBlogs from './blog/ShowBlog';
 function App() {
   return (
     <div className="App">
