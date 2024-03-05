@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import CompShowBlogs from './blog/showBlog';
-
+import CompShowBlogs from './blog/ShowBlog';
+//import CompShowBlogs from './src/blog/showBlog';
 //importamos el componente
 //import CompShowBlogs from './blog/ShowBlog';
 function App() {

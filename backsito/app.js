@@ -5,10 +5,26 @@ import db from "./database/db.js";
 
 import blogRoutes from './routes/routes.js'//si aqui se me buguea es que le deno poner .js a estas export
 
+
+
 const app = express()
 
 //vamos a configurar al cors
-app.use(cors())
+/*
+app.use(cors({
+    origin: "http://localhost:8000",
+}))
+*/
+
+//copilot
+app.use(cors({
+    origin: 'http://localhost:8000', // Cambia esto según tu configuración
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  }))
+
+//un video dice que le haga esti
+
 
 app.use(express.json())
 
