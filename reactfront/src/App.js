@@ -12,6 +12,7 @@ function App() {
        
       
       </header>
+      
       <CompShowBlogs></CompShowBlogs>
     </div>
   );

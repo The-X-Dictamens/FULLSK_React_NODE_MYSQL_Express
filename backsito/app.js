@@ -1,13 +1,20 @@
 import express  from 'express'
-import cors from 'cors'
+import Cors from 'cors'
 
 import db from "./database/db.js";
 
 import blogRoutes from './routes/routes.js'//si aqui se me buguea es que le deno poner .js a estas export
 
 
+//ponerlo en cons
+//const cors = require('cors');
 
 const app = express()
+
+//denuevo
+app.use(Cors());
+
+
 
 //vamos a configurar al cors
 /*
@@ -17,12 +24,13 @@ app.use(cors({
 */
 
 //copilot
+/*
 app.use(cors({
     origin: 'http://localhost:8000', // Cambia esto según tu configuración
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }))
-
+*/
 //un video dice que le haga esti
 
 
