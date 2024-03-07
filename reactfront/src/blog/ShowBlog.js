@@ -57,4 +57,4 @@ const CompShowBlogs = () => {
 
 }
 
-export default CompShowBlogs
+export default CompShowBlogs;

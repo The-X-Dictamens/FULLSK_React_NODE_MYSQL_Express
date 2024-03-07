@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //importamos los componentes
-import CompShowBlogs from '/blog/ShowBlogs';
+import CompShowBlogs from './blog/ShowBlog';
 import CompCreateBlog from './blog/CreateBlog';
 import CompEditBlog from './blog/EditBlog';
 
