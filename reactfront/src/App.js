@@ -17,7 +17,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />        
       </header>
       <BrowserRouter>
+        //aqui ponemos cada ruta de lo que vamos a utilizar
         <Routes>
+          //partes de la ruta, path y el elemento
             <Route path='/' element={ <CompShowBlogs />} />
             <Route path='/create' element={ <CompCreateBlog />} />
             <Route path='/edit/:id' element={ <CompEditBlog />} />
