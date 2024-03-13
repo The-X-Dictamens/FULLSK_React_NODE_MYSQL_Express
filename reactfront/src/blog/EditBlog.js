@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-
+//se quito el gitignore
 const URI = 'http://localhost:8000/blogs/'
 
 const CompEditBlog = () => {
